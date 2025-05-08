@@ -18,7 +18,7 @@ RUN curl -L -o glpi.tgz https://github.com/glpi-project/glpi/releases/download/1
     tar -xzf glpi.tgz && rm glpi.tgz && \
     chown -R www-data:www-data glpi
 
-# Set correct document root
+# Set the correct document root
 ENV APACHE_DOCUMENT_ROOT /var/www/html/glpi/public
 
 # Fix document root config
